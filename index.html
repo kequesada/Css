@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 2: CSS3</title>
+    <link rel="stylesheet" href="Css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tarea 2: CSS3</h1>
+        <p>Estudiante: Kembly Quesada Gómez</p>
+    </header>
+
+    <nav> 
+        <a href="#box-model">Box Model</a>
+        <a href="#position">Position</a>
+        <a href="#float">Float & Clear</a>
+        <a href="#display">Display</a>
+        <a href="#overflow">Overflow</a>
+        <a href="#visibility">Visibility</a>
+        <a href="#zindex">Z-Index</a>
+        <a href="#flexbox">Flexbox</a>
+    </nav>
+
+    <main>
+        <!--2.1. Modelo de Caja (Box Model)-->
+
+        <section id="box-model"> 
+            <h2>Modelo de Caja (Box Model)</h2>
+            <p>Ejemplo de padding, border, margin y diferencia entre elementos block e inline.</p>
+
+            <div class="box-model-container">
+                <div class="box box-1">Caja 1</div>
+                <div class="box box-2">Caja 2</div>
+            </div>
+
+            <p>
+                <span class="inline-ejemplo">Inline 1</span>
+                <span class="inline-ejemplo">Inline 2</span>
+                <span class="inline-ejemplo">Inline 3</span>
+            </p>
+        </section>
+
+        <!--Propiedades de estilo que permite la visualización y posicionamiento de elmentos-->
+        <section id="position">
+            <h2>2.2 Position</h2>
+            <div class="position-demo">
+                <div class="pos static">static</div>
+                <div class="pos relative">relative</div>
+                <div class="pos absolute">absolute</div>
+                <div class="pos fixed">fixed</div>
+            </div>
+        </section>
+
+        <section id="float">
+            <h2>Float y Clear</h2>
+            <div class="float-container">
+                <div class="float-box left">Flotando izquierda</div>
+                <div class="float-box right">Flotando derecha</div>
+                <p class="float-text">Texto que fluye alrededor de los elementos flotantes.</p>
+                <div class="clear">Elemento con clear: both</div>
+            </div>
+        </section>
+
+        <section id="display">
+            <h2>Display</h2>
+            <div class="display-demo">
+                <div class="block">display: block</div>
+                <span class="inline">display: inline</span>
+                <span class="inline">otro inline</span>
+                <div class="inline-block">display: inline-block</div>
+            </div>
+        </section>
+
+        <section id="overflow">
+            <h2>Overflow</h2>
+            <div class="overflow-container">
+                <div class="overflow visible">overflow: visible<br>Texto largo largo largo largo largo largo largo largo largo largo largo</div>
+                <div class="overflow hidden">overflow: hidden<br>Texto largo largo largo largo largo largo largo largo largo largo largo</div>
+                <div class="overflow scroll">overflow: scroll<br>Texto largo largo largo largo largo largo largo largo largo largo largo</div>
+                <div class="overflow auto">overflow: auto<br>Texto largo largo largo largo largo largo largo largo largo largo largo</div>
+            </div>
+        </section>
+
+        <section id="visibility">
+            <h2>Visibility</h2>
+            <div class="visibility-demo">
+                <div class="vis visible">visible</div>
+                <div class="vis hidden">hidden</div>
+                <div class="vis collapse">collapse (simulado)</div>
+            </div>
+        </section>
+
+        <section id="zindex">
+            <h2>Z-Index</h2>
+            <div class="zindex-container">
+                <div class="z z1">z-index: 1</div>
+                <div class="z z10">z-index: 10</div>
+                <div class="z z5">z-index: 5</div>
+            </div>
+        </section>
+</body>
+</html>
