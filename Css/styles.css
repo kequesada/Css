@@ -1,34 +1,33 @@
+/* ======== ESTILOS GENERALES ======== */
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.5;
-    background-color: #f5f5f5;
-    color: #333;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #004b8d;
-    color: #fff;
+    background: #004b8d;
+    color: white;
     padding: 20px;
     text-align: center;
 }
 
 nav {
-    background-color: #e0e0e0;
+    background: #e0e0e0;
     padding: 10px;
     text-align: center;
 }
 
 nav a {
     margin: 0 10px;
-    text-decoration: none;
-    color: #004b8d;
     font-weight: bold;
+    color: #004b8d;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -36,28 +35,15 @@ nav a:hover {
 }
 
 main {
+    width: 90%;
     max-width: 1100px;
     margin: 20px auto;
-    padding: 10px;
-    background-color: #fff;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
 }
 
-section {
-    margin-bottom: 40px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 20px;
-}
-
-h2 {
-    margin-bottom: 10px;
-    color: #004b8d;
-}
-
-h3 {
-    margin: 10px 0;
-}
-
-/* 2.1 Box Model */
+/* ======== BOX MODEL ======== */
 .box-model-container {
     display: flex;
     gap: 20px;
@@ -65,11 +51,11 @@ h3 {
 }
 
 .box {
-    background-color: #cfe8ff;
+    width: 150px;
     padding: 20px;
     border: 5px solid #004b8d;
     margin: 10px;
-    width: 150px;
+    background: #cfe8ff;
 }
 
 .inline-ejemplo {
@@ -77,5 +63,223 @@ h3 {
     padding: 5px;
     border: 1px solid #004b8d;
     margin-right: 5px;
-    background-color: #e8f4ff;
+    background: #e8f4ff;
+}
+
+/* ======== POSITION ======== */
+.position-demo {
+    position: relative;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.pos {
+    width: 120px;
+    height: 60px;
+    padding: 10px;
+    border: 2px solid #ff9800;
+    background: #ffe0b2;
+    margin: 5px;
+}
+
+.relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background: #ffcc80;
+}
+
+.absolute {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ffb74d;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: #ffa726;
+    z-index: 100;
+}
+
+/* ======== FLOAT & CLEAR ======== */
+.float-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.float-box {
+    width: 40%;
+    padding: 10px;
+    background: #dcedc8;
+    border: 1px solid #689f38;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.float-text {
+    margin-top: 10px;
+}
+
+.clear {
+    clear: both;
+    background: #c8e6c9;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* ======== DISPLAY ======== */
+.display-demo {
+    margin-top: 20px;
+}
+
+.block {
+    display: block;
+    background: #bbdefb;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.inline {
+    display: inline;
+    background: #c5cae9;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.inline-block {
+    display: inline-block;
+    background: #9fa8da;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+/* ======== OVERFLOW ======== */
+.overflow-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.overflow {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #757575;
+    padding: 5px;
+    background: #f0f0f0;
+}
+
+.visible { overflow: visible; }
+.hidden { overflow: hidden; }
+.scroll { overflow: scroll; }
+.auto { overflow: auto; }
+
+/* ======== VISIBILITY ======== */
+.visibility-demo {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.vis {
+    width: 150px;
+    height: 60px;
+    background: #ffe082;
+    border: 1px solid #ffb300;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/* ======== Z-INDEX ======== */
+.zindex-container {
+    position: relative;
+    height: 150px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.z {
+    position: absolute;
+    width: 150px;
+    height: 80px;
+    padding-top: 30px;
+    text-align: center;
+    background: rgba(33, 150, 243, 0.6);
+    border: 2px solid #0d47a1;
+}
+
+.z1 { top: 20px; left: 20px; z-index: 1; }
+.z10 { top: 40px; left: 60px; z-index: 10; }
+.z5 { top: 60px; left: 100px; z-index: 5; }
+
+/* ======== FLEXBOX ======== */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.flex-item {
+    background: #b2dfdb;
+    border: 1px solid #00796b;
+    padding: 10px;
+    flex: 0 0 30%;
+    text-align: center;
+}
+
+.flex-items-demo {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.flex-demo {
+    background: #ffe0b2;
+    border: 1px solid #fb8c00;
+    padding: 10px;
+    flex-basis: 30%;
+    text-align: center;
+}
+
+/* Propiedades de flex items */
+.a { order: 2; flex-grow: 1; }
+.b { order: 1; flex-grow: 2; align-self: flex-start; }
+.c { order: 3; flex: 1 1 40%; align-self: flex-end; }
+
+/* Flex responsive */
+.flex-responsive {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    background: #e1bee7;
+    border: 1px solid #8e24aa;
+    padding: 15px;
+    flex: 1 1 200px;
+}
+
+/* ======== FOOTER ======== */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #e0e0e0;
+    margin-top: 20px;
 }
