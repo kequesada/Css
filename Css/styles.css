@@ -1,6 +1,7 @@
-/* ======== ESTILOS GENERALES ======== */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -11,14 +12,14 @@ body {
 }
 
 header {
-    background: #004b8d;
-    color: white;
+    background: #6a1b9a;         
+    color: #fff;
     padding: 20px;
     text-align: center;
 }
 
 nav {
-    background: #e0e0e0;
+    background: #8e24aa;
     padding: 10px;
     text-align: center;
 }
@@ -26,12 +27,13 @@ nav {
 nav a {
     margin: 0 10px;
     font-weight: bold;
-    color: #004b8d;
+    color: #f3e5f5;
     text-decoration: none;
 }
 
 nav a:hover {
     text-decoration: underline;
+    color: #ffffff;
 }
 
 main {
@@ -43,7 +45,27 @@ main {
     border-radius: 8px;
 }
 
-/* ======== BOX MODEL ======== */
+section {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+section h2 {
+    color: #6a1b9a;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    color: #8e24aa;
+    margin: 15px 0 8px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+/* Box Model */
 .box-model-container {
     display: flex;
     gap: 20px;
@@ -56,44 +78,50 @@ main {
     border: 5px solid #004b8d;
     margin: 10px;
     background: #cfe8ff;
+    border-radius: 6px;
 }
 
-.inline-ejemplo {
+.inline {
     display: inline;
     padding: 5px;
     border: 1px solid #004b8d;
     margin-right: 5px;
     background: #e8f4ff;
+    border-radius: 4px;
 }
 
-/* ======== POSITION ======== */
+/* Position*/
 .position-demo {
     position: relative;
-    height: 200px;
+    height: 220px;
     border: 1px solid #ccc;
-    margin-top: 20px;
+    margin-top: 15px;
+    padding: 5px;
+    background: #fafafa;
 }
 
 .pos {
-    width: 120px;
-    height: 60px;
-    padding: 10px;
+    width: 220px;
+    min-height: 50px;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 4px;
     border: 2px solid #ff9800;
     background: #ffe0b2;
-    margin: 5px;
+    font-size: 0.9rem;
 }
 
 .relative {
     position: relative;
-    top: 20px;
-    left: 20px;
+    top: 15px;
+    left: 15px;
     background: #ffcc80;
 }
 
 .absolute {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 15px;
+    right: 15px;
     background: #ffb74d;
 }
 
@@ -105,10 +133,12 @@ main {
     z-index: 100;
 }
 
-/* ======== FLOAT & CLEAR ======== */
+/* Float y Clear */
 .float-container {
     border: 1px solid #ccc;
     padding: 10px;
+    background: #fafafa;
+    border-radius: 6px;
 }
 
 .float-box {
@@ -116,6 +146,7 @@ main {
     padding: 10px;
     background: #dcedc8;
     border: 1px solid #689f38;
+    border-radius: 4px;
 }
 
 .left {
@@ -135,18 +166,20 @@ main {
     background: #c8e6c9;
     padding: 10px;
     margin-top: 10px;
+    border-radius: 4px;
 }
 
-/* ======== DISPLAY ======== */
+/* Display */
 .display-demo {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .block {
-    display: block;
+     display: block;
     background: #bbdefb;
     padding: 10px;
     margin-bottom: 5px;
+    border-radius: 4px;
 }
 
 .inline {
@@ -161,9 +194,10 @@ main {
     background: #9fa8da;
     padding: 10px;
     margin-top: 5px;
+    border-radius: 4px;
 }
 
-/* ======== OVERFLOW ======== */
+/* Overflow */
 .overflow-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -184,7 +218,7 @@ main {
 .scroll { overflow: scroll; }
 .auto { overflow: auto; }
 
-/* ======== VISIBILITY ======== */
+/* Visibility */
 .visibility-demo {
     display: flex;
     gap: 10px;
@@ -192,57 +226,73 @@ main {
 }
 
 .vis {
-    width: 150px;
-    height: 60px;
+    width: 200px;
+    height: 70px;
     background: #ffe082;
     border: 1px solid #ffb300;
     text-align: center;
-    padding-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
 }
 
-.hidden {
+.visibility-demo .hidden {
     visibility: hidden;
 }
 
-/* ======== Z-INDEX ======== */
+.collapse {
+    opacity: 0.4;
+    border-style: dashed;
+}
+
+/* Z-Index */
 .zindex-container {
     position: relative;
-    height: 150px;
+    height: 180px;
     border: 1px solid #ccc;
-    margin-top: 20px;
+    margin-top: 15px;
+    background: #fafafa;
+    border-radius: 6px;
 }
 
 .z {
     position: absolute;
-    width: 150px;
+    width: 160px;
     height: 80px;
-    padding-top: 30px;
+    padding: 10px;
     text-align: center;
-    background: rgba(33, 150, 243, 0.6);
-    border: 2px solid #0d47a1;
+    padding-top: 25px;
+    background: rgba(103, 58, 183, 0.6);
+    border: 2px solid #4527a0;
+    color: #fff;
+    border-radius: 6px;
 }
 
-.z1 { top: 20px; left: 20px; z-index: 1; }
-.z10 { top: 40px; left: 60px; z-index: 10; }
-.z5 { top: 60px; left: 100px; z-index: 5; }
+.z1  { top: 20px; left: 20px;  z-index: 1; }
+.z10 { top: 40px; left: 70px;  z-index: 10; }
+.z5  { top: 60px; left: 120px; z-index: 5; }
 
-/* ======== FLEXBOX ======== */
+/* Flexbox */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     border: 1px solid #ccc;
     padding: 10px;
+    border-radius: 6px;
+    background: #fafafa;
 }
 
 .flex-item {
     background: #b2dfdb;
     border: 1px solid #00796b;
     padding: 10px;
-    flex: 0 0 30%;
+    flex: 1 1 200px;
     text-align: center;
+    border-radius: 4px;
 }
 
+/* Flex items demo */
 .flex-items-demo {
     display: flex;
     gap: 10px;
@@ -255,31 +305,49 @@ main {
     padding: 10px;
     flex-basis: 30%;
     text-align: center;
+    border-radius: 4px;
 }
 
-/* Propiedades de flex items */
-.a { order: 2; flex-grow: 1; }
-.b { order: 1; flex-grow: 2; align-self: flex-start; }
-.c { order: 3; flex: 1 1 40%; align-self: flex-end; }
+/* Flex items */
+.a {
+    order: 2;
+    flex-grow: 1;
+}
+
+.b {
+    order: 1;
+    flex-grow: 2;
+    align-self: flex-start;
+}
+
+.c {
+    order: 3;
+    flex: 1 1 40%;
+    align-self: flex-end;
+}
 
 /* Flex responsive */
 .flex-responsive {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: 15px;
 }
 
-.card {
+.flex-resp {
     background: #e1bee7;
     border: 1px solid #8e24aa;
     padding: 15px;
-    flex: 1 1 200px;
+    flex: 1 1 220px;
+    border-radius: 4px;
+    text-align: center;
 }
 
-/* ======== FOOTER ======== */
+/* Footer */
 footer {
     text-align: center;
     padding: 15px;
-    background: #e0e0e0;
+    background: #ede7f6;
     margin-top: 20px;
+    color: #4a148c;
 }

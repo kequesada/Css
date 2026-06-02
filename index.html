@@ -27,72 +27,85 @@
 
         <section id="box-model"> 
             <h2>Modelo de Caja (Box Model)</h2>
-            <p>Ejemplo de padding, border, margin y diferencia entre elementos block e inline.</p>
+            <p>El margin es el espacio externo.</p>
 
             <div class="box-model-container">
-                <div class="box box-1">Caja 1</div>
-                <div class="box box-2">Caja 2</div>
+                <div class="box box-1">El padding es el espacio interno.</div>
+                <div class="box box-2">El border es el borde.</div>
             </div>
 
+            <p>Los elementos inline se colocan uno al lado del otro.</p>
             <p>
-                <span class="inline-ejemplo">Inline 1</span>
-                <span class="inline-ejemplo">Inline 2</span>
-                <span class="inline-ejemplo">Inline 3</span>
+                <span class="inline">Inline 1</span>
+                <span class="inline">Inline 2</span>
+                <span class="inline">Inline 3</span>
             </p>
         </section>
 
         <!--Propiedades de estilo que permite la visualización y posicionamiento de elmentos-->
         <section id="position">
-            <h2>2.2 Position</h2>
+            <h2>Position</h2>
+            <p>La propiedad position controla cómo se posiciona un elemento en 
+                la página.</p>
             <div class="position-demo">
-                <div class="pos static">static</div>
-                <div class="pos relative">relative</div>
-                <div class="pos absolute">absolute</div>
-                <div class="pos fixed">fixed</div>
+                <div class="pos static">static: posición normal</div>
+                <div class="pos relative">relative: se mueve desde su posición original</div>
+                <div class="pos absolute">absolute: se posiciona de forma absoluta</div>
+                <div class="pos fixed">fixed: se queda fijo en la pantalla</div>
             </div>
         </section>
 
         <section id="float">
             <h2>Float y Clear</h2>
+            <p>La propiedad float permite que los elementos se desplacen hacia la 
+                izquierda o la derecha dentro de su contenedor.</p>
             <div class="float-container">
                 <div class="float-box left">Flotando izquierda</div>
                 <div class="float-box right">Flotando derecha</div>
-                <p class="float-text">Texto que fluye alrededor de los elementos flotantes.</p>
-                <div class="clear">Elemento con clear: both</div>
+                <p class="float-text">El texto se acomoda alrededor de los elementos flotantes.</p>
+                <div class="clear">clear: both: Elemento debajo de los elementos flotantes izquierdo y derecho, tambien se puede utilizar left o right por separado debajo de cada elemento flotante </div>
             </div>
         </section>
 
         <section id="display">
             <h2>Display</h2>
+            <p>La propiedad display controla cómo se muestra un elemento en la 
+                página.</p>
             <div class="display-demo">
-                <div class="block">display: block</div>
-                <span class="inline">display: inline</span>
-                <span class="inline">otro inline</span>
-                <div class="inline-block">display: inline-block</div>
+                <div class="block">display: block = Elemento ocupa toda la línea</div>
+                <span class="inline">display: inline = Elemento se muestra en línea</span>
+                <div class="inline-block">display: inline-block = Elemento se muestra en línea pero con propiedades de bloque</div>
             </div>
         </section>
 
         <section id="overflow">
             <h2>Overflow</h2>
+            <p>La propiedad overflow controla cómo se muestra el contenido que se 
+                desborda del contenedor.</p>
             <div class="overflow-container">
-                <div class="overflow visible">overflow: visible<br>Texto largo largo largo largo largo largo largo largo largo largo largo</div>
-                <div class="overflow hidden">overflow: hidden<br>Texto largo largo largo largo largo largo largo largo largo largo largo</div>
-                <div class="overflow scroll">overflow: scroll<br>Texto largo largo largo largo largo largo largo largo largo largo largo</div>
-                <div class="overflow auto">overflow: auto<br>Texto largo largo largo largo largo largo largo largo largo largo largo</div>
+                <div class="overflow visible">overflow: visible<br>El texto largo se muestra completamente, incluso si se desborda del contenedor</div>
+                <div class="overflow hidden">overflow: hidden<br>El texto que se desborda del contenedor no es visible</div>
+                <div class="overflow scroll">overflow: scroll<br>Se muestra una barra de desplazamiento para acceder al contenido que se desborda del contenedor</div>
+                <div class="overflow auto">overflow: auto<br>Se muestra una barra de desplazamiento solo si es necesario</div>
+                
             </div>
         </section>
 
         <section id="visibility">
             <h2>Visibility</h2>
+            <p>La propiedad visibility controla la visibilidad de un elemento 
+                sin afectar su espacio en el diseño.</p>
             <div class="visibility-demo">
-                <div class="vis visible">visible</div>
-                <div class="vis hidden">hidden</div>
-                <div class="vis collapse">collapse (simulado)</div>
+                <div class="vis visible">visible: El elemento es visible</div>
+                <div class="vis hidden">hidden: El elemento es oculto</div>
+                <div class="vis collapse">collapse (simulado): El elemento es colapsado</div>
             </div>
         </section>
 
         <section id="zindex">
             <h2>Z-Index</h2>
+            <p>El z-index controla el orden de apilamiento de los elementos 
+                posicionados.</p>
             <div class="zindex-container">
                 <div class="z z1">z-index: 1</div>
                 <div class="z z10">z-index: 10</div>
@@ -100,38 +113,43 @@
             </div>
         </section>
 
-    <section id="flexbox">
-            <h2>Flexbox</h2>
+        <section id="flexbox">
+                <h2>Flexbox</h2>
 
-            <h3>Flex Container</h3>
-            <div class="flex-container">
-                <div class="flex-item">1</div>
-                <div class="flex-item">2</div>
-                <div class="flex-item">3</div>
-                <div class="flex-item">4</div>
-                <div class="flex-item">5</div>
-                <div class="flex-item">6</div>
-            </div>
+                <h3>Flex Container</h3>
+                <p>El contenedor flex organiza sus elementos hijos en una fila 
+                    o columna flexible.</p>
+                <div class="flex-container">
+                    <div class="flex-item">Contenedor 1</div>
+                    <div class="flex-item">Contenedor 2</div>
+                    <div class="flex-item">Contenedor 3</div>
+                    <div class="flex-item">Contenedor 4</div>
+                    <div class="flex-item">Contenedor 5</div>
+                    <div class="flex-item">Contenedor 6</div>
+                </div>
 
-            <h3>Flex Items</h3>
-            <div class="flex-items-demo">
-                <div class="flex-demo a">A</div>
-                <div class="flex-demo b">B</div>
-                <div class="flex-demo c">C</div>
-            </div>
+                <h3>Flex Items</h3>
+                <p>Los elementos flex se organizan dentro del contenedor flex.</p>
+                <div class="flex-items-demo">
+                    <div class="flex-demo a">Item 1</div>
+                    <div class="flex-demo b">Item 2</div>
+                    <div class="flex-demo c">Item 3</div>
+                </div>
 
-            <h3>Flex Responsive</h3>
-            <div class="flex-responsive">
-                <div class="card">Tarjeta 1</div>
-                <div class="card">Tarjeta 2</div>
-                <div class="card">Tarjeta 3</div>
-                <div class="card">Tarjeta 4</div>
-            </div>
-        </section>
-    </main>
+                <h3>Flex Responsive</h3>
+                <p>El diseño flex responsive se adapta a diferentes tamaños de 
+                    pantalla.</p>
+                <div class="flex-responsive">
+                    <div class="flex-resp">Registro 1</div>
+                    <div class="flex-resp">Registro 2</div>
+                    <div class="flex-resp">Registro 3</div>
+                    <div class="flex-resp">Registro 4</div>
+                </div>
+            </section>
+        </main>
 
-    <footer>
-        <p>Tarea 2 - CSS3</p>
-    </footer>
+        <footer>
+            <p>Tarea 2 - CSS3</p>
+        </footer>
 </body>
 </html>
